@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="assets/vendor/pure-min/pure.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -412,7 +415,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          
+          <p>Wants to connect drop a message below.</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -439,8 +442,61 @@
             </div>
 
           </div>
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="contact-form">
+              <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+              action="https://script.google.com/macros/s/AKfycbw-QrhSfWtjU336e9qafdm9NT6juZbr9Y7h-ZqB/exec">
+                <!-- change the form action to your script url -->
+            
+                <div class="form-elements">
+                  
+                    <fieldset class="pure-group name-field">
+                      <label for="name">Name</label>
+                      <input id="name" name="name"/>
+                    </fieldset>
+              
+                    <fieldset class="pure-group email-field">
+                      <label for="email">Your Email</label>
+                      <input id="email" name="email" type="email" value=""
+                      required />
+                    </fieldset>
+                  
+                  <fieldset class="pure-group">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject"
+                    />
+                  </fieldset>
+
+                  <fieldset class="pure-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="10"
+                    ></textarea>
+                  </fieldset>
+            
+                  <fieldset class="pure-group honeypot-field">
+                    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                    <input id="honeypot" type="text" name="honeypot" value="" />
+                  </fieldset>
+            
+                  <button class="button-success pure-button button-xlarge">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                </div>
+            
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div class="thankyou_message" style="display:none;">
+                  <h2> Thank you for getting connected, your message is delivered.
+                  </h2>
+                </div>
+            
+              </form>
+            </div>
+          
+          <!-- END -->
+          
 
 
+          </div>
+         
         </div>
 
       </div>
@@ -475,6 +531,7 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
