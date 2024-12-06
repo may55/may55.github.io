@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
+  width: 140px;
   border: 8px solid #2c2f3f;
 }
 
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  margin-top: -20%;
 }
 
 #hero h1 {
